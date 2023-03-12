@@ -78,9 +78,16 @@ img {
     transition: all .8s;
 }
 
+.accordian_image  img {
+    transition: all .8s;
+}
+
 .accordian_input:checked + .accordian_label>.accordian_image {
     display: block;
     opacity: 1;
+}
+.accordian_input:checked + .accordian_label .accordian_text {
+    color: #000000;
 }
 
 .accordian_item:hover > .accordian_image {
@@ -89,21 +96,20 @@ img {
 }
 
 
-/*(hover:hover),*/
 @media  (min-width: 1000px) {
     .accordian_label:hover >.accordian_image {
         display: block;
-        transition: all 0.3s;
+        opacity: 1;
     }
 
     .accordian_content:hover .accordian_icon {
         display: block;
-        transform: rotate(45deg);
-        transition: all 0.3s;
+        transition: all .3s;
     }
+
     .accordian_content:hover .accordian_text {
         color: #000000;
-        transition: all 0.3s;
+        transition: all .3s;
     }
 }
 
@@ -118,4 +124,3 @@ img {
         font-size: 0.7rem;
     }
 }
-
