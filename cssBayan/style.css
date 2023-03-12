@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: #000000;
+    background: linear-gradient(to right, rgb(203, 203, 223), pink);
+}
+
+html {
+    font-size: 1.4rem;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    width: 26rem;
+    height: 15rem;
+    margin-bottom: 1.5rem;
+}
+
+.container {
+    max-width: 50rem;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.accordian_label {
+    display: block;
+    cursor: pointer;
+}
+
+.accordian_input {
+    width: 0;
+    height: 0;
+
+    appearance: none;
+    position: absolute;
+}
+
+.accordian_title {
+    text-align: start;
+    color: blue;
+    padding: .15rem .10rem;
+}
+
+.accordian_item {
+    border-top: 0.06rem solid #695c5c;
+}
+
+.accordian_image {
+    display: none;
+    transition: all .3s;
+}
+
+.accordian_input:checked + .accordian_label>.accordian_image {
+    display: block;
+    opacity: 1;
+}
+
+
+@media (max-width: 820px) {
+    html {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 320px) {
+    html {
+        font-size: 0.7rem;
+    }
+}

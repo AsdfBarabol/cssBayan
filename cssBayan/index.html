@@ -4,36 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cssBayan</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>accordion HTML/CSS</title>
 </head>
 <body>
    <div class="wrapper">
-    <div class="container">
-        <h1 class="container_title">CSS Bayan</h1>
-        <div class="accordian_content">
-            <input class="accordian_input" type="radio" name="accordian" id="acc1" checked>
-            <div class="accordian_item">
-                <label class="accordian_label" for="acc1">
-                    <div class="accordian_title">First title</div>
-                    <div class="accordian_image">First image</div>
-                </label>
-            </div>
-            <input class="accordian_input" type="radio" name="accordian" id="acc2">
-            <div class="accordian_item">
-                <label class="accordian_label" for="acc2">
-                    <div class="accordian_title">Second title</div>
-                    <div class="accordian_image">Second image</div>
-                </label>
-            </div>
-            <input class="accordian_input" type="radio" name="accordian" id="acc1">
-            <div class="accordian_item">
-                <label class="accordian_label" for="acc1">
-                    <div class="accordian_title">Three title</div>
-                    <div class="accordian_image">Three image</div>
-                </label>
+        <div class="container">
+            <h1 class="container_title">CSS Bayan</h1>
+            <div class="accordian_content">
+                <div class="accordian_item">
+                    <input class="accordian_input" type="radio" name="accordian" id="acc1" checked>
+                    <label class="accordian_label" for="acc1">
+                        <div class="accordian_title">Правила программиста
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="accordian_image">
+                            <img src="assets/img/progromm.jpeg" alt="mem1">
+                        </div>
+                    </label>
+                </div>
+                <div class="accordian_item">
+                    <input class="accordian_input" type="radio" name="accordian" id="acc2" >
+                    <label class="accordian_label" for="acc2">
+                        <div class="accordian_title">Первый урок
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="accordian_image">
+                            <img src="assets/img/code.jpg" alt="mem2">
+                        </div>
+                    </label>
+                </div>
+                <div class="accordian_item">
+                    <input class="accordian_input" type="radio" name="accordian" id="acc3" >
+                    <label class="accordian_label" for="acc3">
+                        <div class="accordian_title">Первая работа
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="accordian_image">
+                            <img src="assets/img/job.jpg" alt="mem3">
+                        </div>
+                    </label>
+                </div>
+                <div class="accordian_item">
+                    <input class="accordian_input" type="radio" name="accordian" id="acc4" >
+                    <label class="accordian_label" for="acc4">
+                        <div class="accordian_title">Первый доход
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="accordian_image">
+                            <img src="assets/img/firstMoney.jpg" alt="mem4">
+                        </div>
+                    </label>
+                </div>
             </div>
         </div>
-    </div>
    </div>
 </body>
 </html>
